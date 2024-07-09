@@ -1,0 +1,13 @@
+// gestion css du halo autour de la souris
+
+.halo-souris{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: var(--halo-souris-color);
+    filter: blur(45px);
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }

@@ -1,0 +1,46 @@
+/* root à adapter en data-thepme si nécessaire */
+:root { 
+    --gutter: 16px;                                                                   /* Nécessaire aux largeurs */
+    --valide : green;                                                               /* Nécessaire aux formulaires */
+    --nonValide : red;                                                              /* Nécessaire aux formulaires */
+    --background-loader : grey;                                                     /* Nécessaire au loader */
+    --halo-souris-color : grey;                                                     /* Nécessaire au halo autour de la souris */
+    --logo-loader : url("assets/logo/Logo-AL-developpement-web-black.png");           /* Nécessaire au loader */
+    /* si pas de dark/light mode
+    --back-color-one : black;
+    --back-color-two : white;           
+    --txt-color-one : white;
+    --txt-color-two : black; 
+    */ 
+}
+
+/* Si dark_mode utilisé */
+[data-theme="dark"]{
+    --back-color-one : black;
+    --back-color-two : white;
+    --txt-color-one : white;
+    --txt-color-two : black;
+    --logo-AL: url("../assets/logo/Logo-AL-developpement-web-white.png");
+    --picto-sprite: url("../assets/picto/sprite-white.png");
+    --access: url("../assets/picto/access-white.png");
+}
+[data-theme="light"]{
+    --back-color-one : white;
+    --back-color-two : black;
+    --txt-color-one : black;
+    --txt-color-two : white;
+    --logo-AL: url("../assets/logo/Logo-AL-developpement-web-black.png");
+    --picto-sprite: url("../assets/picto/sprite-black.png");
+    --access: url("../assets/picto/access-black.png");
+}
+
+/* si switch access utilisé */
+[data-style="normal"]{
+    /* Déclarez ici les variables pour les différents font-family */ 
+    --access : url("../assets/picto/access-black.png");
+}
+[data-style="access"]{
+    /* Remplacez ici tout les font-family par "Luciole" */
+    /* Luciole existe en Bold et Regular seulement */
+    --access : url("../assets/picto/access-blue.png");
+}

@@ -1,0 +1,43 @@
+parametrage de webpack
+
+si pas de fichier package-json dans le projet : npm init -y
+installation de webpack : npm install webpack webpack-cli --save-dev
+installation du plugin terser : npm install terser-webpack-plugin --save-dev
+configuration : créer un fichier "webpack.dev.config.js" dans le dossier config pour le configurer
+y mettre :
+                const path = require('path');
+                module.exports = {
+                mode: 'development',  // Mode développement pour avoir un code lisible
+                entry: '../js/fraldev.js',
+                output: {
+                    filename: 'fraldev-bundle.js',
+                    path: path.resolve(__dirname, '../js')
+                },
+                devtool: 'source-map',  // Génère des source maps pour faciliter le débogage
+                optimization: {
+                    minimize: false,  // Désactive la minification pour avoir un code lisible
+                },
+                };
+faire de même pour la version minimal :
+                                                const path = require('path');
+                                                const TerserPlugin = require('terser-webpack-plugin');
+
+                                                module.exports = {
+                                                mode: 'production',  // Mode production pour activer la minification
+                                                entry: '../js/fraldev.js',
+                                                output: {
+                                                    filename: 'fraldev-bundle.min.js',
+                                                    path: path.resolve(__dirname, '../js')
+                                                },
+                                                optimization: {
+                                                    minimize: true,
+                                                    minimizer: [new TerserPlugin({
+                                                    extractComments: false,
+                                                    })],
+                                                },
+                                                plugins: [],
+                                                };
+
+La configuration inclut également TerserPlugin pour la minification du code lorsque minimize est défini à true
+
+Exécution, ce mettre dans le dossier config (cd config): npx webpack --config webpack.dev.config.js (ou webpack.prod.config.js)

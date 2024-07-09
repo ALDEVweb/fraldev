@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "sass": "^1.77.6"
+  },
+  "scripts": {
+    "build-css": "sass ../scss/fraldev.scss ../css/fraldev-bundle.css",
+    "watch-css": "sass --watch ../scss/fraldev.scss:../css/fraldev-bundle.css",
+    "build-min-css": "sass --style=compressed ../scss/fraldev.scss ../css/fraldev-bundle.min.css",
+    "watch-min-css": "sass --watch ../scss/fraldev.scss:../css/fraldev-bundle.min.css",
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "build:prod": "webpack --config webpack.prod.config.js"
+
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,55 @@
+Infos sur les classes utilisables :
+
+Largeur : x = 1 à 12
+    Desktop = large-x
+    Tablets = medium-x          // (min-width: 690px) and (max-width: 1024px)
+    Smartphon = small-x         // (max-width: 689px)
+
+Font-size : 
+    fs4, 8, 16, 24, 32, 48, 60, 80 px
+
+Font-weight : 
+    fw100, 200, 300, 400, 500, 600, 700, 800, 900
+    fw-normal, lighter, bold, bolder
+
+Padding : 
+    p4, 8, 16, 24, 32 px
+
+Gap :
+    gap4, 8, 16, 24, 32 px
+
+Marge : 
+    mt ou mb ou mr ou mlauto, 4, 8, 16, 24, 32, 48, 60, 80 px
+    mrlauto = marge gauche droite auto
+    mtbauto = marge top bottom auto
+    mt = margin-top
+    mb = margin-bottom 
+    mr = margin-right
+    ml = margin-left
+
+Display :
+    pos-rel = position: relative
+    flex = display: flex et flex-wrap: wrap
+    d-none = display: none
+    d-block = display: block;
+
+Alignement flex :
+    j-between = justify-content: space-between
+    j-center = justify-content: center;
+    a-center = align-items: center;
+    a-between = align-items: space-between
+
+Alignement du texte :
+    txt-center = text-align: center
+    txt-end = text-align: end
+
+Utilitaire divers :
+    b-none = border: none
+    btn = display: inline-block et cursor: pointer
+    cursor-pointer = cursor: pointer
+    overflow-hidden = overflow: hidden
+    roundx : x = 4, 8, 16 px
+
+Classe non utilisable mais réglé par défaut :
+    :visited, :active, :link = text-decoration: none 
+    li = list-style: none 

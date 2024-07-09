@@ -1,0 +1,68 @@
+
+// gestion css du menu burger
+// si utilisation, mettre burger-transition sur les element à rendre blyur lors de l'ouverture
+
+@media screen and (max-width: 1024px) {
+    .burger-menu {
+        display: block;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        backdrop-filter: blur(12px);
+        transform: translateX(100%);
+        transition: transform 0.6s linear;
+    }
+    .burger-menu>div { flex-direction: column; align-items: center; margin-top: 12vh; }
+    .burger-transition { transition: filter 0.6s linear; }
+    .blur-menu-ouvert { filter: blur(5px); opacity: 0.2; }
+    .burger-menu-ouvert { transform: translateX(0);}
+    .burger-menu nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+    }
+    .burger-button {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 40px;
+        height: 32px;
+    }
+    .burger-button span {
+        position: absolute;
+        width: 36px;
+        height: 4px;
+        background: var(--color-text);
+        border-radius: 100px;
+        display: inline-block;
+        transition: 0.3s ease;
+        left: 0;
+    }
+    .burger-top {
+        top: 0;
+    }    
+    .burger-middle {
+        top: 14px;
+    }   
+    .burger-bottom {
+        bottom: 0;
+    }
+    .burger-top-check {
+        transform: rotate(45deg);
+        transform-origin: top left;
+        top: 4px;
+        left: 5px;
+    }
+    .burger-bottom-check {
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+        bottom: -4px;
+        left: 5px;
+    }
+    .burger-middle-check {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}

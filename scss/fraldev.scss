@@ -1,0 +1,26 @@
+// fichier main d'importation de toutes mes classes sass
+
+// Pour un nouveau projet : faire "npm install sass" et réutiliser le fichier package.json pour la transformation de fichier sass vers css
+// pour chaque nouvel import de classe sass : faire "npm run build-css"
+// puis faire "npm run watch-css" pour surveiller les modification appôrtées aux différents fichiers scss
+
+// ensuite on peut lier les fichier css au fichier html (ou php)
+
+// npm run build-css pour la version standard
+// npm run build-min-css pour la version minimal
+
+
+@import 'init';
+@import 'largeur';
+@import 'font_size';
+@import 'font_weight';
+@import 'marging';
+@import 'padding';
+@import 'gap';
+@import 'display';
+@import 'color_form';
+@import 'utils';
+@import 'loader';
+@import 'switch';
+@import 'halo_souris';
+@import 'menu_burger';

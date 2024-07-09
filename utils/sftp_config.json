@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "host": "",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "",
+    "password": "",
+    "remotePath": "",
+    "uploadOnSave": true,
+    "syncOption": {
+        "autoDelete": true
+    },
+    "watcher": {
+        "files": "**/*",
+        "autoUpload": true,
+        "autoDelete": true,
+        "ignore": [
+            ".vscode"
+        ]
+      }
+}

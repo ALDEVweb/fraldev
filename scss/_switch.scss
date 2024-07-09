@@ -1,0 +1,73 @@
+// gestion css des switchs
+
+.checkbox-switch {
+    position: absolute;
+    display: none;
+}
+
+// switch access
+/* Webfont: Luciole-Regular */
+@font-face {
+    font-family: 'Luciole';
+    src: url('../fonts/Luciole_webfonts/Luciole-Bold/Luciole-Bold.ttf')format('truetype');
+}
+/* Webfont: Luciole-Regular */
+@font-face {
+    font-family: 'Luciole';
+    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.ttf')format('truetype');
+}
+// picto
+.p-access{
+    width: 32px;
+    height: 32px;
+    background-image: var(--access);
+}
+
+// dark_mode
+/* button dark/light mode */
+.switch-mode {
+    position: relative;
+    width: 56px;
+    height: 32px;
+}
+.switch-label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slider-switch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.checkbox-switch:checked ~ .slider-switch {
+    background-color: black;
+}
+.slider-switch::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px #1B1B1B;
+    box-shadow: inset 12px -4px 0px 0px #1B1B1B;
+    background-color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.checkbox-switch:checked ~ .slider-switch::before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background-color: #d9d9d9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
