@@ -32,8 +32,8 @@
                 <ul class="flex a-center gap16">
                     <!--  <li><a class="curs-point" href="tel:+33666529277" title="lien pour m'appeler"><div class="picto p-phone"></div></a></li> -->
                     <li> <!-- Construire votre menu --> </li>
-                    <li><?php include "../templates/fragments/switch_access.php"; ?></li>
-                    <li><?php include "../templates/fragments/dark_mode.php"; ?></li>  
+                    <li><?php include "templates/fragments/switch_access.php"; ?></li>
+                    <li><?php include "templates/fragments/dark_mode.php"; ?></li>  
                 </ul>
             </nav>
         </div>
