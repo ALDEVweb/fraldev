@@ -17,7 +17,7 @@ include "ouvertureBDD.php";
 $bdd->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_WARNING);
 
 // Autochargement des classes et modeles
-include "../modeles/autoloader.php";
+include "modeles/autoloader.php";
 $autoloader = new autoloader();
 
 // activation du mécanisme de session
